@@ -34,35 +34,36 @@
 //
 // Limit Switches
 //
-#define X_MIN_PIN                           PC13
-#define Y_MIN_PIN                           PC14
-#define Z_MIN_PIN                           PC15
+#define X_MIN_PIN                           PB6
+#define Y_MIN_PIN                           PB7
+#define Z_MIN_PIN                           PB8
 
 
 //
 // Steppers
 //
-#define X_STEP_PIN                          PB8
-#define X_DIR_PIN                           PB5
-#define X_ENABLE_PIN                        PB9
+#define Y_STEP_PIN                          PB2
+#define Y_DIR_PIN                           PB1
+#define Y_ENABLE_PIN                        PB10
 
-#define Y_STEP_PIN                          PB4
-#define Y_DIR_PIN                           PB3
-#define Y_ENABLE_PIN                        PB9
+#define X_STEP_PIN                          PB4
+#define X_DIR_PIN                           PB3
+#define X_ENABLE_PIN                        PB5
 
-#define Z_STEP_PIN                          PA15
-#define Z_DIR_PIN                           PA10
-#define Z_ENABLE_PIN                        PB9
+#define Z_STEP_PIN                          PC14
+#define Z_DIR_PIN                           PC13
+#define Z_ENABLE_PIN                        PC15
 
 #define E0_STEP_PIN                         PA9
 #define E0_DIR_PIN                          PA8
-#define E0_ENABLE_PIN                       PB9
+#define E0_ENABLE_PIN                       PA15
+
 
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN                          PB1   
-#define TEMP_BED_PIN                        PB0   
+#define TEMP_0_PIN                          PA5   
+#define TEMP_BED_PIN                        PA6   
 
 //
 // Heaters / Fans
@@ -79,7 +80,7 @@
 
 // SDCard
 #define SD_SS_PIN                           PA4
-#define SD_DETECT_PIN                       PB10
+#define SD_DETECT_PIN                       PA10
 
 // Rotary Encoder
 #define BTN_EN1                             PB13

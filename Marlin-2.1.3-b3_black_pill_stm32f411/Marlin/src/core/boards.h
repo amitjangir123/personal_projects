@@ -473,22 +473,23 @@
 #define BOARD_CREALITY_V24S1_301F4    5242  // Creality v2.4.S1_301F4 (STM32F401RC) as found in the Ender-3 S1 F4
 #define BOARD_CREALITY_CR4NTXXC10     5243  // Creality E3 Free-runs Silent Motherboard (STM32F401RET6)
 #define BOARD_FYSETC_SPIDER_KING407   5244  // FYSETC Spider King407 (STM32F407ZG)
-#define BOARD_MKS_SKIPR_V1            5245  // MKS SKIPR v1.0 all-in-one board (STM32F407VE)
-#define BOARD_TRONXY_CXY_446_V10      5246  // TRONXY CXY-446-V10-220413/CXY-V6-191121 (STM32F446ZE)
-#define BOARD_CREALITY_F401RE         5247  // Creality CR4NS200141C13 (STM32F401RE) as found in the Ender-5 S1
-#define BOARD_BLACKPILL_CUSTOM        5248  // Custom board based on STM32F401CDU6.
-#define BOARD_I3DBEEZ9_V1             5249  // I3DBEEZ9 V1 (STM32F407ZG)
-#define BOARD_MELLOW_FLY_E3_V2        5250  // Mellow Fly E3 V2 (STM32F407VG)
-#define BOARD_BLACKBEEZMINI_V1        5251  // BlackBeezMini V1 (STM32F401CCU6)
-#define BOARD_XTLW_CLIMBER_8TH        5252  // XTLW Climber-8th (STM32F407VGT6)
-#define BOARD_FLY_RRF_E3_V1           5253  // Fly RRF E3 V1.0 (STM32F407VG)
-#define BOARD_FLY_SUPER8              5254  // Fly SUPER8 (STM32F407ZGT6)
-#define BOARD_FLY_D8                  5255  // FLY D8 (STM32F407VG)
-#define BOARD_FLY_CDY_V3              5256  // FLY CDY V3 (STM32F407VGT6)
-#define BOARD_ZNP_ROBIN_NANO          5257  // Elegoo Neptune 2 v1.2 board
-#define BOARD_ZNP_ROBIN_NANO_V1_3     5258  // Elegoo Neptune 2 v1.3 board
-#define BOARD_MKS_NEPTUNE_X           5259  // Elegoo Neptune X
-#define BOARD_MKS_NEPTUNE_3           5260  // Elegoo Neptune 3
+#define BOARD_blackpill_f411ce        5245  // BlackPill STM32F411CE
+#define BOARD_MKS_SKIPR_V1            5246  // MKS SKIPR v1.0 all-in-one board (STM32F407VE)
+#define BOARD_TRONXY_CXY_446_V10      5247  // TRONXY CXY-446-V10-220413/CXY-V6-191121 (STM32F446ZE)
+#define BOARD_CREALITY_F401RE         5248  // Creality CR4NS200141C13 (STM32F401RE) as found in the Ender-5 S1
+#define BOARD_BLACKPILL_CUSTOM        5249  // Custom board based on STM32F401CDU6.
+#define BOARD_I3DBEEZ9_V1             5250  // I3DBEEZ9 V1 (STM32F407ZG)
+#define BOARD_MELLOW_FLY_E3_V2        5251  // Mellow Fly E3 V2 (STM32F407VG)
+#define BOARD_BLACKBEEZMINI_V1        5252  // BlackBeezMini V1 (STM32F401CCU6)
+#define BOARD_XTLW_CLIMBER_8TH        5253  // XTLW Climber-8th (STM32F407VGT6)
+#define BOARD_FLY_RRF_E3_V1           5254  // Fly RRF E3 V1.0 (STM32F407VG)
+#define BOARD_FLY_SUPER8              5255  // Fly SUPER8 (STM32F407ZGT6)
+#define BOARD_FLY_D8                  5256  // FLY D8 (STM32F407VG)
+#define BOARD_FLY_CDY_V3              5257  // FLY CDY V3 (STM32F407VGT6)
+#define BOARD_ZNP_ROBIN_NANO          5258  // Elegoo Neptune 2 v1.2 board
+#define BOARD_ZNP_ROBIN_NANO_V1_3     5259  // Elegoo Neptune 2 v1.3 board
+#define BOARD_MKS_NEPTUNE_X           5260  // Elegoo Neptune X
+#define BOARD_MKS_NEPTUNE_3           5261  // Elegoo Neptune 3
 
 //
 // Other ARM Cortex-M4

@@ -83,9 +83,9 @@
 #define SD_DETECT_PIN                       PA10
 
 // Rotary Encoder
-#define BTN_EN1                             PB13
-#define BTN_EN2                             PB12
-#define BTN_ENC                             PB14
+//#define BTN_EN1                             PB13
+//#define BTN_EN2                             PB12
+//#define BTN_ENC                             PB14
 
 //
 // Timers
@@ -93,3 +93,14 @@
 // STM32F411xE does not provide TIM6/TIM14. Use available general-purpose timers.
 #define STEP_TIMER                          9
 #define TEMP_TIMER                          10
+
+//
+// TFT
+//
+#define TFT_CS_PIN                          PB0
+#define TFT_DC_PIN                          PB9
+#define TFT_A0_PIN                          TFT_DC_PIN
+#define TFT_RESET_PIN                       PA4
+#define TFT_SCK_PIN                         PA5
+#define TFT_MOSI_PIN                        PA7
+#define TFT_MISO_PIN                        -1

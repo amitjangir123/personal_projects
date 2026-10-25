@@ -17,6 +17,11 @@ static MotorSteps curSteps = {0,0,0};
 static DirectionState ds = {1,1,1};
 static int absolute_mode = 1;
 
+// Ready resend timeout (ms)
+static const unsigned long READY_REPEAT_TIMEOUT_MS = 5000UL;
+// Tracks last time we saw serial activity or sent READY
+static unsigned long lastSerialActivityMs = 0UL;
+
 // Simple bridge functions to forward motor_control APIs into executor/driver
 static void hw_pulse_stub(int pin) {
   pulseStep(pin);
@@ -55,6 +60,7 @@ void setup() {
   delay(2000);  // Wait for serial port to initialize
 
   Serial1.println("READY");
+  lastSerialActivityMs = millis();
 }
 
 
@@ -68,6 +74,7 @@ void loop() {
     processGcodeLine(line.c_str());
     //delay(2000);
     Serial1.println("READY");
+    lastSerialActivityMs = millis();
   }
   
 
@@ -76,5 +83,9 @@ void loop() {
   
   //processGcodeLine(entry);
   //delay(10); // small delay between processing entries
-        
+  // If no serial activity for READY_REPEAT_TIMEOUT_MS, resend READY
+  if (millis() - lastSerialActivityMs >= READY_REPEAT_TIMEOUT_MS) {
+    Serial1.println("READY");
+    lastSerialActivityMs = millis();
+  }
 }

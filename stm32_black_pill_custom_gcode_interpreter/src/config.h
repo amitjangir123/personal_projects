@@ -25,14 +25,14 @@
 // using mm here is more intuitive and independent from steps/mm settings.
 // Defaults match previous step-based values: X/Y = 50 steps @80 steps/mm = 0.625mm
 // Z = 20 steps @400 steps/mm = 0.05mm
-#define BACKLASH_X_MM 0.2
-#define BACKLASH_Y_MM 0.05
+#define BACKLASH_X_MM 0.3
+#define BACKLASH_Y_MM 0.0
 #define BACKLASH_Z_MM 0.0
 
 // Motion constants
 #define STEPS_PER_MM_X 162
 #define STEPS_PER_MM_Y 162
-#define STEPS_PER_MM_Z 2000
+#define STEPS_PER_MM_Z 200
 
 // Maximum allowed feedrate (mm per minute). G-code feedrates above this
 // value will be clamped to this maximum. Adjust to your machine's capability.
